@@ -1,61 +1,70 @@
-<!doctype html>
+<!-- Página de Contatos do Site. Acessível através do link "contato" na página inicial.  -->
 
+<!doctype html>
 <html>
 
-	<head>
-		<title>UNES - Contato</title>
-		<meta charset="utf-8">
-	</head>
+    <head>
+	<!-- Título da página (aparece na aba) -->
+        <title>UNES - Contato</title>
+	    
+	<!-- Metadados -->    
+	<meta charset="utf-8">
+    </head>
+    
+    <!-- Fundo com marcação de diferentes cores (branco e cinza) -->
+    <body background="Imagens/fundo2.png">
+	
+	<!-- Como em um primeiro momento o curso ainda só aplicou tópicos de HTML, faremos a página utilizando recursos de tabelas -->
+	<!-- Utilizaremos a borda 0 para que ela não fique visível mas ainda assim possa estruturar o site -->
+        <table border="0" width="900" align="center">
+	    <tr>
+		<!-- Foto da logo da Universidade no topo à esquerda da página -->    
+	        <td height="90">
+		    <img src="Imagens/logo.png">
+		</td>
 
-	<body background="Imagens/fundo2.png">
-		
-		<table border="0" width="900" align="center">
-			<tr>
-				<td height="90">
-					<img src="Imagens/logo.png">
-				</td>
+		<td align="end">
+		     <!-- Links de acesso às demais páginas do site -->
+		    <a href="index.html">Home</a> | 
+		    <a href="quem-somos.html">Quem somos</a> | 
+		    <a href="contato.html">Contato</a>
+		</td>
+	    </tr>
 
-				<td align="end">
-					<a href="index.html">Home</a> | 
-					<a href="quem-somos.html">Quem somos</a> | 
-					<a href="contato.html">Contato</a>
-				</td>
-			</tr>
+	    <tr>
+		<td colspan="2">
+		    <!-- Instruções para contato, texto aleatório -->
+		    <h2>Entre em contato</h2>
+		    <p>
+		        Sed ut pretium odio. Pellentesque interdum iaculis arcu, at condimentum ex.
+		    </p>
 
-			<tr>
-				<td colspan="2">
-					<h2>Entre em contato</h2>
-					<p>
-						Sed ut pretium odio. Pellentesque interdum iaculis arcu, at condimentum ex.
-					</p>
+		    <hr>
+                    <!-- Formulário de interação para que o usuário envie uma mensagem e entre em contato com a empresa -->
+		    <form>
+	                Seu e-mail:<br>
+			<input type="text" name="email"><br>
 
-					<hr>
+			Assunto:<br>
+			<input type="text" name="assunto"><br>
 
-					<form>
+			Descrição:<br>
+			<textarea></textarea><br>
 
-						Seu e-mail:<br>
-						<input type="text" name="email"><br>
+			<input type="submit" value="Enviar">			
+		    </form>
+		</td>
+	    </tr>
 
-						Assunto:<br>
-						<input type="text" name="assunto"><br>
+	    <tr>
+		<!-- Mensagem final -->
+		<td colspan="2" align="center">
+		    <h4>Todos os direitos reservados</h4>
+		</td>
+	    </tr>
 
-						Descrição:<br>
-						<textarea></textarea><br>
+	</table>
 
-							<input type="submit" value="Enviar">
-						
-					</form>
-				</td>
-			</tr>
-
-			<tr>
-				<td colspan="2" align="center">
-					<h4>Todos os direitos reservados</h4>
-				</td>
-			</tr>
-
-		</table>
-
-	</body>
+    </body>
 
 </html>
